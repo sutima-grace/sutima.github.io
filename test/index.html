@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sutima Vicheanthavee Profile</title>
+    <link rel="stylesheet" href="./style/s1.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#header" class="logo">Sutima's Profile</a>
+        <div>
+            <a href="#header">Home</a>
+            <a href="#about_me">About Me</a>
+            <a href="#skills">Education</a>
+            <a href="#education">skills</a>
+            <a href="#work_experence">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="menu-tab"></div>
+
+    </nav>
+
+    <header id="header">
+        <div>
+            <div>
+                <img id="profile" src="./image/pro.jpg" alt="profile">
+
+            </div>
+            <div class="text-header">
+                <h1>Hello</h1>
+                <h2>I'm Sutima Vicheanthavee</h2>
+                <h3>Computer engineering student</h3>
+                <p>If i got selected to work for the fob. I would get an opportunity to improve my practical skills and
+                    knowledge and I will give my 100% towards the betterment of the organization. </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100027957996472" class="facebook"
+                        target="_blank"></a>
+                    <a href="https://www.instagram.com/Greasyice" class="instagram" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/sutima-vicheanthavee-6471001ba/" class="linkedin"
+                        target="_blank"></a>
+                    <a href="mailto:sutima_eci@kkumail.com" class="email"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="tab-style" id="about_me">
+        <h3 class="text-header">Personal Information</h3>
+        <div class="about-me">
+            <div>
+                <p>Nickname : Grace </p>
+                <p>Date of Birth : August 16, 1998</p>
+                <p>Age : 21 yrs. </p>
+                <p>Gender : Female </p>
+                <p>Nationality : Thai </p>
+                <p>Address : Khon Kaen, Thailand </p>
+            </div>
+            <table>
+                <tr>
+                    <th>Language</th>
+                    <th colspan="5">level</th>
+                </tr>
+                <tr>
+                    <td>Thailand</td>
+                    <td colspan="5">5</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td colspan="3">3</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="tab-style" id="education">
+        <h3 class="text-header">Education</h3>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>Elementary School [2002-2001]</h2>
+                    <p>Donbosco School</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>Hight School [2012-2017]</h2>
+                    <p>Udonpittayanukul</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>University[July 2018 - persent]</h2>
+                    <p>Khon Kaen University</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-style" id="skills">
+        <h3 class="text-header">skills</h3>
+
+        <div class="skils-div about-me-div">
+            <h4>Programming language</h4>
+
+        </div>
+    </div>
+    <div class="tab-style" id="work_experence">
+        <h3 class="text-header">Work Experence</h3>
+        <p>Null</p>
+    </div>
+    <div class="tab-style contact-div" id="contact">
+        <h3 class="text-header">Contact</h3>
+        <div>
+            <form action="">
+                <div>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+
+                    </div>
+                    <div>
+                        <label for="email">Email <span>*</span></label>
+                        <input type="text" name="email" id="email" required>
+
+                    </div>
+                </div>
+                <label for="message">Message <span>*</span></label>
+                <textarea name="message" id="message" rows="3"></textarea>
+                <div>
+                    <button id="send_message" type="submit">Send</button>
+                    <button id="reset_form" type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="ending">
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100027957996472" class="facebook" target="_blank"></a>
+            <a href="https://www.instagram.com/Greasyice" class="instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/sutima-vicheanthavee-6471001ba/" class="linkedin" target="_blank"></a>
+            <a href="mailto:sutima_eci@kkumail.com" class="email"></a>
+        </div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+    </div>
+</body>
+<script>
+    const messageForm = document.querySelector('form');
+    messageForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        console.log('sub');
+        let r = confirm("Press a button!");
+        if (r == true) {
+            console.log('yes');
+        } else {
+            console.log('no');
+        }
+    })
+</script>
+
+</html>
